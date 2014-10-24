@@ -14,6 +14,8 @@ apt-get update
 echo apt-get source $PACKAGE
 apt-get source $PACKAGE
 
+# It all should be in the docker instance already
+# but make sure a dep hasn't changed.
 echo apt-get build-dep -y $PACKAGE
 apt-get build-dep -y $PACKAGE
 
