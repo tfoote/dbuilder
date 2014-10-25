@@ -13,7 +13,7 @@ RUN apt-key add /tmp/ros.key
 RUN echo "Adding dependencies @build_depends"
 RUN apt-get update
 @[for dep in build_depends]
-RUN apt-get install -yV @dep
+RUN apt-get install -yq @dep
 @[end for]
 
 RUN mkdir /dbuilder
