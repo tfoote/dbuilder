@@ -8,9 +8,6 @@ echo dbuilder building package: $PACKAGE
 apt-get update
 
 
-# Not working for ROS packages trying to install fully versioned sourcedeb
-# apt-src install $PACKAGE -t
-# alternative below
 echo apt-get source $PACKAGE
 apt-get source $PACKAGE
 
